@@ -1,0 +1,2 @@
+# Real-World-Path-Planning-and-Navigation-in-Urban-Environments
+This project aims to solve a real-world engineering problem: finding the shortest and most efficient path between two locations in a city using real map data. Path planning and routing are fundamental challenges in robotics, transportation, logistics, and urban planning. Systems like Google Maps rely on solving these types of problems at scale.
