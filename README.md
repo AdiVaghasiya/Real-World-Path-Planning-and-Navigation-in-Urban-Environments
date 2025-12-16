@@ -1,2 +1,26 @@
-# Real-World-Path-Planning-and-Navigation-in-Urban-Environments
-This project aims to solve a real-world engineering problem: finding the shortest and most efficient path between two locations in a city using real map data. Path planning and routing are fundamental challenges in robotics, transportation, logistics, and urban planning. Systems like Google Maps rely on solving these types of problems at scale.
+# Real-World Path Planning (A* + OSM)
+
+
+## Overview
+Starter project to compute shortest routes between two addresses using OpenStreetMap data and a custom A* implementation.
+
+
+## Requirements
+- Python 3.12 or 3.13
+- osmnx
+- networkx
+- matplotlib
+- folium
+- pytest
+
+
+Install with:
+python -m venv myenv
+
+be sure to run jupyter notebook from within the venv to ensure all libraries are actaully used by the notebook
+
+only runs with official python interpreter
+
+```bash
+python -m venv myenv
+pip install osmnx networkx matplotlib scikit-learn folium pytest jupyter
