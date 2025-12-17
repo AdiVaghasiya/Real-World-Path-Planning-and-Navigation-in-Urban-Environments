@@ -13,16 +13,15 @@ Starter project to compute shortest routes between two addresses using OpenStree
 - folium
 - pytest
 
-
-Install with:
-python -m venv myenv
-
-be sure to run jupyter notebook from within the venv to ensure all libraries are actaully used by the notebook
-
-only runs with official python interpreter
+## Setting up virtual environment
+- Windows and Linux both have different commands to activate venve
+- In windows if the activation script does not work it may require extra permission: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+- Run the below commands in the order provided
+- After succefully completing the project exit the venv using "deactivate" command
 
 ```bash
 python -m venv myenv
 ./myenv/bin/activate  [Linux]
-./myenv/Scripts/Activate.ps1 [windows]
+.\myenv\Scripts\Activate.ps1 [windows]
 pip install osmnx networkx matplotlib scikit-learn folium pytest jupyter
+jupyter Notebook

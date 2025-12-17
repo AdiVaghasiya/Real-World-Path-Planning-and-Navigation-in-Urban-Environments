@@ -63,7 +63,7 @@ class PathPlanner(Planner):
                 continue
             visited.add(current)
 
-            for nbr in self.graph.succesors(current):#if the node is not visited then default here and explore all outgoing edges from the current node
+            for nbr in self.graph.successors(current):#if the node is not visited then default here and explore all outgoing edges from the current node
                 edge_data = self.graph.get_edge_data(current,nbr)
                 #take length attribute(if multi-edge, edge_data might be dict of keys)
                 length = None

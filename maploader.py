@@ -18,7 +18,7 @@ import time
 import networkx as nx
 import osmnx as ox
 from osmnx import distance, geocode
-from utils import MappingError, GraphNavigationError
+
 
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "data")
 if not os.path.exists(CACHE_DIR):
@@ -65,7 +65,7 @@ def geocode_address(address: str):
         lat, lon = geocode(address)
         return lat, lon
     except Exception as e:
-        raise MappingError(f"Geocoding failed for address '{address}': {e}") from e
+        raise Exception(f"Geocoding failed for address '{address}': {e}") from e
 
 
 def nearest_node(graph: nx.MultiDiGraph, lat: float, lon: float) -> int:
@@ -78,7 +78,7 @@ def get_nearest_node(graph: nx.MultiDiGraph, lat: float, lon: float):
         node_id = distance.nearest_nodes(graph, X=lon, Y=lat)
         return node_id
     except Exception as e:
-        raise GraphNavigationError("Unable to find nearest node in graph.") from e
+        raise Exception("Unable to find nearest node in graph.") from e
 
 
 
