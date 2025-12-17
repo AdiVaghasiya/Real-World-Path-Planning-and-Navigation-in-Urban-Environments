@@ -23,4 +23,6 @@ only runs with official python interpreter
 
 ```bash
 python -m venv myenv
+./myenv/bin/activate  [Linux]
+./myenv/Scripts/Activate.ps1 [windows]
 pip install osmnx networkx matplotlib scikit-learn folium pytest jupyter
